@@ -1,5 +1,5 @@
-import { deleteMessage } from "./main.js";
-import { currentUser } from "./auth.js";
+import { deleteMessage } from "../MessageFunctions/deleteMessage.js";
+import { currentUser } from "../Auth/auth.js";
 
 export const RenderMessageBox = (sender, message, messageKey) => {
     const ChatContainer = document.querySelector(".chat-container");
