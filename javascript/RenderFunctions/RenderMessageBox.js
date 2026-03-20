@@ -12,7 +12,7 @@ export const RenderMessageBox = (sender, message, messageKey) => {
     ChatBoxSender.className = 'chat-box-username'
 
     const ChatboxImg = document.createElement('img')
-    ChatboxImg.className = 'chat-box-pfp'
+    ChatboxImg.className = 'profile-picture'
     ChatboxImg.src = sender.img;
 
     ChatBox.append(ChatBoxSender, ChatboxImg)
