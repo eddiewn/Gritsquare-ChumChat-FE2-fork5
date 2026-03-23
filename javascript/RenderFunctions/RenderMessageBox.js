@@ -18,7 +18,7 @@ export const RenderMessageBox = async (sender, message, messageKey, nestAmount =
     ChatBox.style.marginLeft = `${nestAmount * 50}px`;
 } else {
     // För mobil, ingen margin
-    ChatBox.style.marginLeft = `0px`;
+    ChatBox.style.marginLeft = `5px`;
 }
 
     const ChatBoxSender = document.createElement("h2");
