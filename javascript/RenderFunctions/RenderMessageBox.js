@@ -1,7 +1,6 @@
 import {deleteMessage} from "../MessageFunctions/deleteMessage.js";
 import {auth} from "../firebase.js";
 import { sendReply } from "../MessageFunctions/sendReply.js";
-import { censorBadWords } from "../function/censor.js";
 
 export const RenderMessageBox = async (sender, message, messageKey) => {
     const user = auth.currentUser;
@@ -45,7 +44,7 @@ export const RenderMessageBox = async (sender, message, messageKey) => {
 
     const ChatBoxMessage = document.createElement("p");
     // console.log(message)
-    ChatBoxMessage.textContent = censorBadWords(message.message);
+    ChatBoxMessage.textContent = message.message;
     ChatBoxMessage.className = "comments-chat";
 
     const TimeStamp = document.createElement("p");
