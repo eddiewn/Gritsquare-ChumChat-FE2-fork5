@@ -449,3 +449,7 @@ nav {
     height: auto;
     display: block;
 }
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+
+}
