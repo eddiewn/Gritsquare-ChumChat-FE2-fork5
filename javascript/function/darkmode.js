@@ -12,6 +12,10 @@ function darkMode() {
     const registerButton = document.querySelector('#register-button')
     const placeHolderImg = document.querySelector('.placeHolderImg')
 
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        enableDarkMode();
+    }
+
     if (!darkmodeButton || !main) {
         console.error("Element saknas i DOM");
         return;

@@ -20,7 +20,7 @@ export const RenderMessageBox = async (sender, message, messageKey, nestAmount =
     ChatBox.style.marginLeft = `${nestAmount * 20}px`;
     } else {
 
-    ChatBox.style.marginLeft = `${nestAmount * 0}px`;
+    ChatBox.style.marginLeft = `${nestAmount * 0}`;
 }
 
     const ChatBoxSender = document.createElement("h2");
