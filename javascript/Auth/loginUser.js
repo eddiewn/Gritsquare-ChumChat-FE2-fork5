@@ -17,7 +17,7 @@ formBody.addEventListener("submit", async (e) => {
 
         console.log("Inloggad:", userCredential.user);
 
-        window.location.href = "/index.html";
+        window.location.href = "/Gritsquare-ChumChat-FE25/index.html";
 
     } catch (error) {
         console.error("Fel vid inloggning:", error.message);

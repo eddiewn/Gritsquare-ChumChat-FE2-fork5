@@ -30,6 +30,7 @@
   background: linear-gradient(135deg, var(--colorOne), var(--colorThree));
   padding: 40px;
   border-radius: 12px;
+  width: 70%;
 }
 
 h1 {
@@ -61,12 +62,17 @@ input {
   background: transparent;
   font-size: 14px;
   outline: none;
+
 }
 
 .full {
   grid-column: span 2;
   color: var(--colorFour);
   
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 button {
